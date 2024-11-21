@@ -67,8 +67,8 @@ function init() {
     fill_section(data_environment_vision, "environment-vision", "Environment");
     fill_section(data_environment_cover, "environment-cover", "Environment");
 
-    var modal = document.getElementByClassName("modal-backdrop");
-    modal.onclick = hide_modal;
+    var modal = document.querySelectorAll(".modal-backdrop");
+    modal[0].onclick = hide_modal;
 }
 
 $(window).load(init);
